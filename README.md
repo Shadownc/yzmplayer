@@ -34,3 +34,16 @@ http://localhost/player/?url=https://cdn.jsdelivr.net/gh/xxx/Video-Bed/Your.Name
 
 http://localhost/player/?url=https://cdn.jsdelivr.net/gh/xxx/Video-Bed/Your.Name/playlist.m3u8&next=https://cdn.jsdelivr.net/gh/xxx/Video-Bed/Your.Name/playlist.m3u8&sid=1&pic=https://img.xx.com/1.png&user=游客&group=1&name=测试
 
+
+### 兼容了苹果CMS10自动播放下一集 需要修改部分CMS源码
+**修改`/static/player/iframe.js`**
+``` js
+MacPlayer.Html = '<iframe width="100%" height="100%" src="'+MacPlayer.PlayUrl+'" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" security="restricted" sandbox="allow-same-origin allow-forms allow-scripts allow-top-navigation"></iframe>';
+MacPlayer.Show();
+```
+**修改`/static/player/parse.js`**
+``` js
+MacPlayer.Html = '<iframe width="100%" height="100%" src="'+MacPlayer.Parse + MacPlayer.PlayUrl+'" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" security="restricted" sandbox="allow-same-origin allow-forms allow-scripts allow-top-navigation"></iframe>';
+MacPlayer.Show();
+```
+#### 修复了加载loading问题，图片上传到了自己的[图床](https://images.100769.xyz/)

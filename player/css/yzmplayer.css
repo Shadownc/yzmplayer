@@ -2666,7 +2666,7 @@ ul::-webkit-scrollbar-track {
 	left: 50%;
 	height: 32px;
 	width: 32px;
-	background-image: url(https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/20200519224236.png);
+	background-image: url(https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/220200519224236.png);
 	-webkit-animation: vod_loading 1s steps(30) infinite;
 	width: 54px;
 	height: 20px;
@@ -2780,7 +2780,7 @@ ul::-webkit-scrollbar-track {
 }
 
 .loading .pic {
-	background: url(https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/20200519223109.gif) no-repeat;
+	background: url(https://images.100769.xyz/file/32ee1c0f53d700cc26d4c.gif) no-repeat;
 	/* background: url(https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/20200519223501.gif) no-repeat;
 	background-image: url(https://cdn.jsdelivr.net/gh/Fog-Forest/Picture-Bed/IMG/20200519224135.gif); */
 	width: 80px;
